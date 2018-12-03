@@ -1,3 +1,16 @@
+//------------------------------------------------------
+// Assignment 2
+// Written by: 
+// Initially take the choice of input from the user to 
+// choose from the patterns or to exit. We can achieve
+// using while loop.
+// Once after entering the while loop ask the user again
+// for the input to enter the number of rows to print the
+// pattern. 
+//------------------------------------------------------
+
+
+
 import java.util.Scanner;
 
 public class Pattern
