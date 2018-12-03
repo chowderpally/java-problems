@@ -59,6 +59,38 @@ public class Pattern
             System.out.println();
         }
     }
+
+    public void printPattern4(int rows)
+    {
+        int k = rows;
+        int n = k;
+
+		for (int i = 1; i < n + 1; i++)
+		{
+			if (i % 2 != 0)
+			{
+				for (int j = 0; j < (k/2); j++)
+					System.out.print(" ");
+				for (int j = 1; j < (i+1); j++)
+					System.out.print(j);
+				System.out.println();
+			}
+			k = k - 1;
+		}
+		
+        for (int i = (n - 1); i > 0; i--)
+		{
+			if (i % 2 != 0)
+			{
+				for (int j = 0; j <= (k/2); j++)
+					System.out.print(" ");
+				for (int j = 1; j < (i+1); j++)
+					System.out.print(j);
+				System.out.println();
+			}
+			k = k + 1;
+		}
+    }
     
     public static void main(String args[])
     {
@@ -128,7 +160,7 @@ public class Pattern
                 int input = sc1.nextInt();
                 if (input > 1 && input <= 10)
                 {
-                    System.out.println("Pattern4");
+                    pt.printPattern4(input);
                     break;
                 }
                 else
